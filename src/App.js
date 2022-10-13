@@ -6,9 +6,9 @@ function App() {
   return (
     <div>
       <header>
-        <div class="navbar bg-base-100 result-miner-navbar">
-          <img src={logo} class="result-miner-logo" />
-          <label class="font-sans">Relatórios</label>
+        <div className="navbar bg-base-100 result-miner-navbar">
+          <img src={logo} className="result-miner-logo" />
+          <label className="font-sans">Relatórios</label>
         </div>
       </header>
       <body>

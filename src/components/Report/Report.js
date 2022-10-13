@@ -1,15 +1,34 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Report.module.css';
+import './Report.css'
+import React, { Component } from "react";
+import axios from "axios";
 
-const Report = () => (
-  <div className={styles.Report} data-testid="Report">
+class Report extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tdlists: [],
+    };
+  }
 
-  </div>
-);
+  LeaguesList() {
+    axios
+      .get("/leagues")
+      .then((res) => {
+        this.setState({ tdlists: res.data });
+      })
+      .catch((error) => console.log(error));
+  }
 
-Report.propTypes = {};
+  componentDidMount() {
+    this.LeaguesList();
+  }
 
-Report.defaultProps = {};
+  render() {
+    return (
+      <div>
+        Aqyu
+      </div>
+  )};
+}
 
 export default Report;
