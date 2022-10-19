@@ -7,22 +7,21 @@ function App() {
   return (
     <div>
       <header>
-        <div className="navbar bg-base-100 result-miner-navbar text-center">
+        <div className="navbar bg-base-100 result-miner-navbar">
           <img src={logo} className="result-miner-logo" />
-          <label className="font-sans">Relatórios</label>
         </div>
       </header>
       <div>
         <div className="flex">
           <div className="w-1/2">
             <h1 className="text-2xl font-bold text-center mt-5">Dicas para over de gols no jogo (Ao vivo)</h1>
-            <div className="artboard phone-1 mt-5">
+            <div className="artboard phone-1 mt-5 ml-10">
               <LeagueByLiveBotTip></LeagueByLiveBotTip>
             </div>
           </div>
           <div className="w-1/2">
             <h1 className="text-2xl font-bold text-center mt-5">Dicas para ambas marcarem (Pré Jogo)</h1>
-            <div className="artboard phone-1 mt-5">
+            <div className="artboard phone-1 mt-5 ml-10">
               <LeagueByPreMatchTip></LeagueByPreMatchTip>
             </div>
           </div>
