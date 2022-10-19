@@ -11,6 +11,7 @@ export default class Report extends Component {
     axios.get("/leagues_by_pre_match_bot")
       .then(res => {
         const list = res.data;
+        console.log(res)
         this.setState({ list: list });
       })
   }
