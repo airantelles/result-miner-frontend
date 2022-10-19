@@ -1,6 +1,7 @@
 import './LeagueByLiveBotTip.css'
 import React, { Component } from "react";
 import axios from "axios";
+axios.defaults.baseURL = 'http://3.88.0.251/'
 
 export default class Report extends Component {
   state = {
@@ -8,7 +9,7 @@ export default class Report extends Component {
   }
 
   componentDidMount() {
-    axios.get("/leagues_by_live_bot")
+    axios.get('/leagues_by_live_bot')
       .then(res => {
         const list = res.data;
         console.log(res)

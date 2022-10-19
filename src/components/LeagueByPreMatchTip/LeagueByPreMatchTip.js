@@ -1,6 +1,7 @@
 import './LeagueByPreMatchTip.css'
 import React, { Component } from "react";
 import axios from "axios";
+axios.defaults.baseURL = 'http://3.88.0.251/'
 
 export default class Report extends Component {
   state = {
