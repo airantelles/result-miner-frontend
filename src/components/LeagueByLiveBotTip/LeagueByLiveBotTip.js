@@ -11,7 +11,7 @@ export default class Report extends Component {
     axios.get("/leagues_by_live_bot")
       .then(res => {
         const list = res.data;
-        this.setState({ list });
+        this.setState({ list: list });
       })
   }
 
