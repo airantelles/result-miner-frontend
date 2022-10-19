@@ -7,7 +7,6 @@ function App() {
   return (
     <div>
       <header>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <div className="navbar bg-base-100 result-miner-navbar">
           <img src={logo} className="result-miner-logo" />
         </div>
