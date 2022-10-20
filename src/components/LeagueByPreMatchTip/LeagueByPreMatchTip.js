@@ -19,8 +19,8 @@ export default class Report extends Component {
 
   render() {
     return (
-      <div>
-        <table className="table w-full">
+      <div className="overflow-x-auto">
+        <table className="table table-zebra w-full">
           <thead>
             <tr>
               <th></th>
@@ -35,22 +35,22 @@ export default class Report extends Component {
           <tbody>
             {
               this.state.list
-              .map((league, index) =>
-                <tr key={index}>
-                  <td>
-                    <img
-                      src={league.league.logo}
-                      style={{maxWidth: "25px"}}
-                      alt='League'
-                    />
-                  </td>
-                  <th>{league.league.external_id}</th>
-                  <td>{league.league.name}</td>
-                  <td>{league.league.country}</td>
-                  <td>{league.total_tips}</td>
-                  <td>{league.success_tips}</td>
-                  <td>{league.percent.toFixed(2)}%</td>
-                </tr>
+                .map((league, index) =>
+                  <tr key={index}>
+                    <td>
+                      <img
+                        src={league.league.logo}
+                        style={{maxWidth: "25px"}}
+                        alt='League'
+                      />
+                    </td>
+                    <th>{league.league.external_id}</th>
+                    <td>{league.league.name}</td>
+                    <td>{league.league.country}</td>
+                    <td>{league.total_tips}</td>
+                    <td>{league.success_tips}</td>
+                    <td>{league.percent.toFixed(2)}%</td>
+                  </tr>
             )}
           </tbody>
         </table>
