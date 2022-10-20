@@ -25,7 +25,7 @@ export default class Report extends Component {
             <tr>
               <th></th>
               <th>ID</th>
-              <th>Nome</th>
+              <th>Liga</th>
               <th>País</th>
               <th>Dicas</th>
               <th>Acertos</th>
